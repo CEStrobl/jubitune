@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jubitune Dropdowns</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --pink: #FF63A1;
+            --cyan: #8DECE8;
+            --yellow: #FFE757;
+            --magenta: #7c2969;
+            --lightmode: #ffffff;
+            --darkmode: #361e36;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: var(--lightmode);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        select {
+            appearance: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 10px;
+            outline: none;
+            cursor: pointer;
+            background-size: 12px;
+            transition: all 0.3s ease;
+            width: 250px;
+            text-align: center;
+        }
+
+        /* 🌸 1. PASTEL CUTE DROPDOWN */
+        .pastel {
+            background: var(--pink);
+            color: var(--lightmode);
+            box-shadow: 0px 4px 8px rgba(255, 99, 161, 0.4);
+        }
+        .pastel:hover {
+            background: var(--cyan);
+            color: var(--darkmode);
+        }
+
+        /* 🎮 2. RETRO PIXELATED DROPDOWN */
+        .pixel {
+            background: var(--yellow);
+            font-family: 'Press Start 2P', cursive;
+            color: var(--darkmode);
+            text-transform: uppercase;
+            border: 4px solid var(--magenta);
+        }
+        .pixel:hover {
+            background: var(--magenta);
+            color: var(--yellow);
+        }
+
+        /* 🌿 3. NATURE SOFT DROPDOWN */
+        .nature {
+            background: var(--cyan);
+            color: var(--darkmode);
+            border: 2px solid var(--yellow);
+            box-shadow: 0px 0px 10px rgba(141, 236, 232, 0.6);
+        }
+        .nature:hover {
+            background: var(--yellow);
+            color: var(--magenta);
+        }
+
+        /* 🌟 4. GLOWY NEON DROPDOWN */
+        .neon {
+            background: var(--darkmode);
+            color: var(--cyan);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border: 2px solid var(--pink);
+            box-shadow: 0px 0px 10px var(--pink);
+        }
+        .neon:hover {
+            background: var(--pink);
+            color: var(--lightmode);
+            box-shadow: 0px 0px 15px var(--yellow);
+        }
+
+        /* 🍀 5. FARMING STYLE DROPDOWN */
+        .farm {
+            background: var(--yellow);
+            border-radius: 30px;
+            font-weight: bold;
+            color: var(--magenta);
+            box-shadow: inset 0px 3px 5px rgba(0, 0, 0, 0.3);
+        }
+        .farm:hover {
+            background: var(--cyan);
+            color: var(--darkmode);
+        }
+
+    </style>
+</head>
+<body>
+
+    <h2 style="color: var(--darkmode); text-align: center;">🎵 Choose a Theme 🎵</h2>
+
+    <!-- 1. Pastel Cute Dropdown -->
+    <select class="pastel">
+        <option>Pastel</option>
+        <option>National Park</option>
+        <option>Piano Version</option>
+    </select>
+
+    <!-- 2. Retro Pixel Dropdown -->
+    <select class="pixel">
+        <option>Pixel</option>
+        <option>National Park</option>
+        <option>Piano Version</option>
+    </select>
+
+    <!-- 3. Nature Soft Dropdown -->
+    <select class="nature">
+        <option>Nature</option>
+        <option>National Park</option>
+        <option>Piano Version</option>
+    </select>
+
+    <!-- 4. Glowy Neon Dropdown -->
+    <select class="neon">
+        <option>Neon</option>
+        <option>National Park</option>
+        <option>Piano Version</option>
+    </select>
+
+    <!-- 5. Farming (Stardew Valley Style) Dropdown -->
+    <select class="farm">
+        <option>Farm</option>
+        <option>National Park</option>
+        <option>Piano Version</option>
+    </select>
+
+</body>
+</html>
